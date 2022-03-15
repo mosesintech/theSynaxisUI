@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import Headroom from 'react-headroom';
 import { Popover, Transition } from '@headlessui/react'
 import {
@@ -14,6 +15,7 @@ import {
 import { ChevronDownIcon } from '@heroicons/react/solid'
 
 import UtilityMenu from './UtilityMenu';
+import LogoIcon from '../../../../public/images/synaxis.jpeg'
 import Login from '../../domain/Users/UserActions/Login'
 
 const solutions = [
@@ -55,11 +57,12 @@ export default function DesktopMenu() {
             <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
               <div className="flex justify-start items-center lg:w-0 lg:flex-1">
                 <Link href="https://thesynaxis.com">
-                  <a>
-                    <img
-                      className="h-8 w-auto sm:h-10"
-                      src="/images/synaxis.jpeg"
+                  <a className="h-8 w-auto sm:h-10">
+                    <Image
+                      src={LogoIcon}
                       alt="The Synaxis"
+                      height='50px'
+                      width="50px"
                     />
                   </a>
                 </Link>
