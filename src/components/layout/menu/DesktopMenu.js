@@ -40,7 +40,7 @@ const solutions = [
 ]
 const callsToAction = [
   { name: 'Take The Tour', href: '/tour', icon: PlayIcon },
-  { name: 'Contact Us', href: 'https://thesynaxis.com/contact', icon: MailIcon },
+  { name: 'Contact Us', href: 'https://synaxisweb.netlify.app/contact', icon: MailIcon },
 ]
 
 function classNames(...classes) {
@@ -56,7 +56,7 @@ export default function DesktopMenu() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
               <div className="flex justify-start items-center lg:w-0 lg:flex-1">
-                <Link href="https://thesynaxis.com">
+                <Link href="https://synaxisweb.netlify.app">
                   <a className="h-8 w-auto sm:h-10">
                     <Image
                       src={LogoIcon}
@@ -66,7 +66,7 @@ export default function DesktopMenu() {
                     />
                   </a>
                 </Link>
-                <Link href="https://thesynaxis.com">
+                <Link href="https://synaxisweb.netlify.app">
                   <span className="px-5 font-headingStyled cursor-pointer">The Synaxis</span>
                 </Link>
               </div>
@@ -143,9 +143,9 @@ export default function DesktopMenu() {
                 </Popover>
 
                 
-                <a href="https://thesynaxis.com/about" className="text-base font-medium text-gray-500 hover:text-gray-900">About</a>
+                <a href="https://synaxisweb.netlify.app/about" className="text-base font-medium text-gray-500 hover:text-gray-900">About</a>
 
-                <a href="https://thesynaxis.com/news" className="text-base font-medium text-gray-500 hover:text-gray-900">News</a>
+                <a href="https://synaxisweb.netlify.app/news" className="text-base font-medium text-gray-500 hover:text-gray-900">News</a>
                 
                
               </Popover.Group>
@@ -209,24 +209,24 @@ export default function DesktopMenu() {
                 </div>
                 <div className="py-6 px-5 space-y-6">
                   <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                    <Link href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                      Pricing
+                    <Link href="/tour" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                      Tour
                     </Link>
 
-                    <Link href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                      Docs
+                    <Link href="https://synaxisweb.netlify.app/contact" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                      Contact
                     </Link>
                   </div>
                   <div>
                     <Link
-                      href="#"
+                      href="/register"
                       className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
                     >
                       Sign up
                     </Link>
                     <p className="mt-6 text-center text-base font-medium text-gray-500">
                       Existing customer?{' '}
-                      <Link href="#" className="text-indigo-600 hover:text-indigo-500">
+                      <Link href="/login" className="text-indigo-600 hover:text-indigo-500">
                         Sign in
                       </Link>
                     </p>
