@@ -1,3 +1,5 @@
+import Head from 'next/head'
+
 import Edges from '../components/layout/Edges'
 import ScriptureReader from '../components/domain/Scripture/ScriptureViews/ScriptureReader'
 import Card from '../components/Card';
@@ -5,6 +7,9 @@ import Card from '../components/Card';
 export default function Scripture() {
   return (
     <>
+    <Head>
+      <title>The Synaxis | Scripture Reader</title>
+    </Head>
     <Edges size="lg">
       <div className="container mx-auto max-w-7xl px-4 py-6">
         <h1 className="font-headingStyled">The Synaxis Scripture Reader</h1>

@@ -1,11 +1,11 @@
 @tailwind base; 
 @tailwind components; 
 @tailwind utilities;
+@font-face {
+  font-family: 'TriodPostnaja';
+  src: url("/fonts/TriodPostnaja") format("truetype");
+}
 @layer base {
-  @font-face {
-    font-family: 'TriodPostnaja';
-    src: url("/fonts/TriodPostnaja") format("truetype");
-  }
   h1 {
     @apply uppercase text-h1 font-heading;
   }
