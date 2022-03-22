@@ -6,7 +6,7 @@ export default function FooterMenu() {
         <>
             <div className="md:flex md:justify-between">
                 <div className="mb-6 md:mb-0">
-                    <Link href="/" className="flex items-center">
+                    <Link href="https://synaxisweb.netlify.app" className="flex items-center">
                         <a>
                             <h3 className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white font-headingStyled">The Synaxis</h3>
                         </a>
@@ -18,7 +18,7 @@ export default function FooterMenu() {
                         <ul className="text-gray-600 dark:text-gray-400">
                             <li className="mb-4">
                                 <a 
-                                    href="https://thesynaxis.com/about" 
+                                    href="https://synaxisweb.netlify.app/about" 
                                     className="hover:underline "
                                 >
                                     About
@@ -26,7 +26,7 @@ export default function FooterMenu() {
                             </li>
                             <li className="mb-4">
                                 <a 
-                                    href="https://thesynaxis.com/news" 
+                                    href="https://synaxisweb.netlify.app/news" 
                                     className="hover:underline"
                                 >
                                     News
@@ -64,7 +64,7 @@ export default function FooterMenu() {
                         <ul className="text-gray-600 dark:text-gray-400">
                             <li className="mb-4">
                                 <a 
-                                    href="https://thesynaxis.com/privacy" 
+                                    href="https://synaxisweb.netlify.app/privacy" 
                                     className="hover:underline"
                                 >
                                     Privacy Policy
@@ -72,7 +72,7 @@ export default function FooterMenu() {
                             </li>
                             <li>
                                 <a 
-                                    href="https://thesynaxis.com/terms" 
+                                    href="https://synaxisweb.netlify.app/terms" 
                                     className="hover:underline"
                                 >
                                     Terms &amp; Conditions
