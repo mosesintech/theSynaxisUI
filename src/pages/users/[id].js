@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 import Edges from '../../components/layout/Edges'
 
-export default function UserProfile() {
+export default function UserProfile({ id }) {
   return (
     <>
     <Head>
