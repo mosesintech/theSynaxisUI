@@ -1,18 +1,21 @@
-import { Provider } from 'react-redux'
+import { Provider as ReduxProvider } from 'react-redux'
 import { store } from '../store'
 import Layout from '../components/layout/Layout'
 import '../assets/styles/globals.css'
+import { withUrqlClient } from 'next-urql';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Provider store={store}>
+      <ReduxProvider store={store}>
         <Layout>
           <Component {...pageProps} />
         </Layout>
-      </Provider>
+      </ReduxProvider>
     </>
   )
 }
 
-export default MyApp
+export default withUrqlClient((_ssrExchange, ctx) => ({
+  url: `${process.env.NEXT_PUBLIC_SERVER_URL}`,
+}))(MyApp);
